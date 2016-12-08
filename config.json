@@ -1,0 +1,45 @@
+{
+    "pooling": false,
+    "connection": {
+        "host": "HOSTNAME",
+        "user": "USERNAME",
+        "password": "PASSWORD",
+        "database": "DATABASE"
+    },
+    "tables": {
+        "users": {
+            "name": "users",
+            "mapping": {
+                "id": "id",
+                "userName": "userName",
+                "familyName": "name.familyName",
+                "givenName": "name.givenName",
+                "organization": "organization",
+                "active": "active",
+                "created": "meta.created",
+                "lastModified": "meta.lastModified"
+            }
+        },
+        "user_groups": {
+            "name": "user_groups",
+            "mapping": {
+                "id": "id",
+                "name": "display"
+            }
+        },
+        "user_groups_relation": {
+            "name": "user_groups_relation"
+        },
+        "user_emails": {
+            "name": "user_emails",
+            "mapping": {
+                "id": "id",
+                "value": "value",
+                "primary_email": "primary"
+            }
+        },
+        "types": {
+            "name": "types"
+        }
+    }
+}

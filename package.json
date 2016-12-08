@@ -1,0 +1,35 @@
+{
+  "name": "mysql-userdb",
+  "version": "0.12.1",
+  "description": "user database management",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel es6 --out-dir dist --no-comments",
+    "prepublish": "npm run build"
+  },
+  "author": "Sven Gerhardt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svengerhardt/node-mysql-userdb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/svengerhardt/node-mysql-userdb/issues"
+  },
+  "homepage": "https://github.com/svengerhardt/node-mysql-userdb#readme",
+  "keywords": [
+    "mysql",
+    "database",
+    "user",
+    "management"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
+  },
+  "dependencies": {
+    "mysqlw": "^0.13.3",
+    "object-mapper": "^3.0.1"
+  }
+}
