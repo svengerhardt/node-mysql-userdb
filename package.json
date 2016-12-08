@@ -29,7 +29,7 @@
     "babel-preset-latest": "^6.16.0"
   },
   "dependencies": {
-    "mysqlw": "^0.13.3",
+    "mysqlw": "^0.13.4",
     "object-mapper": "^3.0.1"
   }
 }
